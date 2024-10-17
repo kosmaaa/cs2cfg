@@ -1,0 +1,69 @@
+
+//----SOUNDS------
+alias cat1 "play \sounds\ambient\animal\cat_01.vsnd_c"
+alias cat2 "play \sounds\ambient\animal\cat_02.vsnd_c"
+alias cat3 "play \sounds\ambient\animal\cat_03.vsnd_c"
+alias cat4 "play \sounds\ambient\animal\cat_04.vsnd_c"
+alias button "play \sounds\buttons\button9.vsnd_c"
+alias aou "play \sounds\aou.vsnd"
+alias vine "play \sounds\vine.vsnd"
+alias oof "play \sounds\ough.vsnd"
+alias bruh "play \sounds\bruh.vsnd"
+alias snare "play \sounds\snare.vsnd"
+alias clap "play \sounds\clap.vsnd"
+alias aeh "play \sounds\jerk.vsnd"
+alias fart "play \sounds\fart.vsnd"
+
+
+//----MAKING-THE-THINGS-PLAY-ONCE-CUZ-VALVE-SUX-OR-IM-JUST-ASS----
+alias +use2 "+use;button"
+alias -use2 "-use"
+alias +lookatweapon2 "+lookatweapon;vine"
+alias -lookatweapon2 "-lookatweapon"
+alias +attackk "+attack;cat4;spec_next"
+alias -attackk "-attack;"
+alias +attackk2 "+attack2;aou;spec_prev"
+alias -attackk2 "-attack2;"
+alias +drop2 "drop;bruh"
+alias -drop2 
+alias +slot11 "slot1;snare;snd_toolvolume .3"
+alias -slot11 ";snd_toolvolume .1"
+alias +slot22 "slot2;clap"
+alias -slot22 
+alias +slot33 "slot3;aeh"
+alias -slot33
+// alias +fart "+duck;fart"
+// alias -fart "-duck;"
+
+
+//---SILLY-CHAT-BINDS--
+alias awesome "awesome1"
+alias awesome1 "say   ／l、             ; alias awesome awesome2;"
+alias awesome2 "say （ﾟ､ ｡ ７         ; alias awesome awesome3"
+alias awesome3 "say   l  ~ヽ       ; alias awesome awesome4"
+alias awesome4 "say   じしf_,)ノ; alias awesome awesome1"
+
+alias aww "aww1"
+alias aww1 "say      ∧,,,,∧,,,,,,,∧; alias aww aww2;"
+alias aww2 "say      (  _  _ )⩊^ )~♡; alias aww aww3;"
+alias aww3 "say      /      ⊂      \; alias aww aww1;
+
+bind m "say (=ↀωↀ=)✧ i love pussy"
+bind n "say ヾ(*ФωФ)βyё βyё☆彡"
+bind l "say 【≽^•⩊•^≼】"
+bind c awesome
+bind j aww
+bind , "say ₊≽^•⩊•^≼"
+
+//----THE-ACTUAL-BINDS
+bind e "+use2"
+bind f "+lookatweapon2"
+bind mouse1 +attackk
+bind mouse2 +attackk2
+bind g +drop2
+bind 1 +slot11
+bind 2 +slot22
+bind 3 +slot33
+// bind ctrl +fart
+
+exec rainbowHud
